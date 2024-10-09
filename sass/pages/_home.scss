@@ -1,0 +1,123 @@
+// main stye
+.herro {
+  background-color: #dceaf5;
+
+  .wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    // ! Herro info
+    &-info {
+      h1 {
+        font-family: Poppins;
+        font-size: 60px;
+        font-weight: 600;
+        line-height: 72px;
+        letter-spacing: -0.03em;
+        text-align: left;
+        color: #1d3444;
+      }
+      p {
+        font-family: Poppins;
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 30px;
+        text-align: left;
+        color: #1d3444;
+        margin: 30px 0;
+      }
+
+      span {
+        display: block;
+        font-family: Poppins;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 30px;
+        text-align: left;
+        color: #39414980;
+        margin: 100px 0 30px 0;
+      }
+      &-brand {
+        display: flex;
+        gap: 20px;
+        align-items: center;
+      }
+    }
+    // Herro img
+    &-img {
+      max-width: 900px;
+      img {
+        width: 100%;
+      }
+    }
+  }
+}
+
+// ! companies style
+.compaines {
+  margin: 100px 0;
+
+  h2 {
+    //styleName: H2 Heading;
+    font-family: Poppins;
+    font-size: 48px;
+    font-weight: 600;
+    line-height: 56px;
+    letter-spacing: -0.03em;
+    text-align: left;
+    color: #1d3444;
+  }
+
+  p {
+    font-family: Poppins;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 30px;
+    text-align: left;
+    color: #5b5b5b;
+    margin: 30px 0;
+  }
+
+  &-cards {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+
+    .compaines-card {
+      h3 {
+        font-family: Poppins;
+        font-size: 24px;
+        font-weight: 500;
+        line-height: 25.56px;
+        letter-spacing: -0.03em;
+        text-align: left;
+        margin: 20px 0;
+      }
+      p {
+        font-family: Poppins;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 28px;
+        text-align: left;
+      }
+      img {
+        width: 350px;
+      }
+      a {
+        display: block;
+        width: 120px;
+        height: 17px;
+        top: 1606px;
+        left: 1200px;
+        gap: 0px;
+        opacity: 1; /* opacity uchun 'px' bo'lmaydi */
+        color: #f58a07;
+        transition: transform 0.3s ease;
+
+        &:hover {
+          transform: translateX(10px); /* hover bo'lganda o'ngga suriladi */
+        }
+      }
+    }
+  }
+}

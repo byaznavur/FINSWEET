@@ -1,0 +1,19 @@
+button {
+  padding: 12px 15px;
+  font-family: Poppins;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 17.04px;
+  text-align: left;
+  background-color: #f58a07;
+  color: #ffffff;
+  transition: all 0.7s ease;
+  border: none;
+  border-radius: 15px;
+  cursor: pointer;
+
+  &:hover {
+    color: #1d3444;
+    background-color: inherit;
+  }
+}
