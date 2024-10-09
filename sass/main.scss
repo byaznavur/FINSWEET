@@ -1,0 +1,31 @@
+// main.scss
+@import "global";
+// Abstracts
+@import "abstracts/variables";
+@import "abstracts/functions";
+@import "abstracts/mixins";
+@import "abstracts/placeholders";
+
+// Base
+@import "base/reset";
+@import "base/typography";
+@import "base/base";
+
+// Components
+@import "components/buttons";
+@import "components/cards";
+@import "components/form";
+
+// Layout
+@import "layout/header";
+@import "layout/footer";
+
+// Pages
+@import "pages/home";
+@import "pages/about";
+
+// Themes
+@import "themes/theme";
+
+// Vendors
+@import "vendors/bootstrap";

@@ -1,0 +1,48 @@
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  //? list style
+
+  .list {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+
+    &-item {
+      list-style: none;
+
+      &-link {
+        font-family: Poppins;
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 24px;
+        text-align: left;
+        color: #394149;
+        transition: all 0.7s ease;
+
+        &:hover {
+          color: #f58a07;
+        }
+      }
+      &:last-child {
+        background-color: #f58a071a;
+        padding: 10px;
+        border-radius: 15px;
+        transition: all 0.6s ease;
+        a {
+          font-family: Poppins;
+          font-size: 16px;
+          font-weight: 600;
+          line-height: 17.04px;
+          text-align: left;
+          color: #f58a07;
+        }
+        &:hover {
+          background-color: #f0c99d;
+        }
+      }
+    }
+  }
+}
