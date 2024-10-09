@@ -30,3 +30,29 @@ dataCard.map((el) => {
   let data = getCompainesCards(el);
   compainesCards.append(data);
 });
+
+// solutions cards maping
+
+const solutionsCards = document.querySelector(".solution-cards");
+
+function getSolutionsCards(el) {
+  const solutionsCard = document.createElement("div");
+  solutionsCard.classList.add("solution-card");
+
+  const solutionsImg = document.createElement("img");
+  solutionsImg.src = el.img;
+  solutionsImg.alt = el.name;
+  const solutionsTitle = document.createElement("h3");
+  solutionsTitle.textContent = el.name;
+
+  const solutionsDesc = document.createElement("p");
+  solutionsDesc.textContent = el.desc;
+  solutionsCard.append(solutionsImg, solutionsTitle, solutionsDesc);
+
+  return solutionsCard;
+}
+
+data.map((el) => {
+  let data = getSolutionsCards(el);
+  solutionsCards.append(data);
+});
