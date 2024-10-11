@@ -173,3 +173,74 @@
     }
   }
 }
+
+// ! startup section
+
+.startup {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+
+  &-info {
+    h2 {
+      font-family: Poppins;
+      font-size: 35px;
+      font-weight: 600;
+      line-height: 56px;
+      letter-spacing: -0.03em;
+      text-align: left;
+    }
+
+    p {
+      font-family: Poppins;
+      font-size: 18px;
+      font-weight: 500;
+      line-height: 30px;
+      text-align: left;
+      margin: 10px 0;
+    }
+
+    &-cards {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      &-item {
+        span {
+          font-family: Inter;
+          font-size: 36px;
+          font-weight: 700;
+          line-height: 50px;
+          text-align: left;
+          color: #f58a07;
+        }
+
+        h3 {
+          font-family: Poppins;
+          font-size: 24px;
+          font-weight: 600;
+          line-height: 25.56px;
+          letter-spacing: -0.03em;
+          text-align: left;
+        }
+
+        p {
+          font-family: Poppins;
+          font-size: 15px;
+          font-weight: 500;
+          line-height: 28px;
+          text-align: left;
+        }
+      }
+    }
+  }
+
+  &-img {
+    width: 695px;
+
+    img {
+      width: 520px;
+      height: 627px;
+    }
+  }
+}
