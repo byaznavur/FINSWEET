@@ -460,4 +460,210 @@ button:hover {
 }
 .energy-info button {
   border: 1px solid #fff;
+}
+
+.dream {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 30px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.dream-info {
+  max-width: 50%;
+}
+.dream-info h3 {
+  font-family: Poppins;
+  font-size: 48px;
+  font-weight: 600;
+  line-height: 56px;
+  letter-spacing: -0.03em;
+  text-align: left;
+}
+.dream-info p {
+  font-family: Poppins;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 30px;
+  text-align: left;
+  margin: 20px 0;
+}
+.dream-info .cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.dream-info .cards .card h4 {
+  font-family: Poppins;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 41.04px;
+  text-align: left;
+}
+.dream-info .cards .card span {
+  font-family: Poppins;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 30.78px;
+  text-align: left;
+  color: #f58a07;
+}
+.dream-video {
+  width: 50%;
+}
+.dream-video iframe {
+  width: 100%;
+  border-radius: 20px;
+}
+
+.latest {
+  background: #dceaf5;
+}
+.latest h1 {
+  font-family: Poppins;
+  font-size: 48px;
+  font-weight: 600;
+  line-height: 56px;
+  letter-spacing: -0.03em;
+  text-align: left;
+}
+.latest-cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 30px;
+  margin-top: 50px;
+}
+.latest-cards .card {
+  width: 400px;
+}
+.latest-cards .card h3 {
+  font-family: Poppins;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 36px;
+  letter-spacing: -0.03em;
+  text-align: left;
+  margin: 10px 0;
+}
+.latest-cards .card p {
+  font-family: Poppins;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 28px;
+  text-align: left;
+  margin-bottom: 10px;
+}
+.latest-cards .card img {
+  width: 100%;
+}
+
+footer {
+  background: #063255;
+  height: 463px;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 40px 0;
+}
+footer .left-bottom {
+  background: #f58a07;
+  height: 137px;
+  width: 20px;
+  padding: 40px 20px;
+  position: absolute;
+  bottom: 0;
+  border-top-right-radius: 13px;
+}
+footer .right-top {
+  position: absolute;
+  width: 53px;
+  height: 287px;
+  top: 30px;
+  right: 0;
+  border-radius: 20px 0px 0px 20px;
+  background: #f58a07;
+  padding: 40px 20px;
+}
+footer .footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 30px;
+  padding: 20px;
+}
+footer .footer .footer-card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 25px;
+}
+footer .footer .footer-card h3 {
+  font-family: Poppins;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 27px;
+  text-align: left;
+  color: #fff;
+}
+footer .footer .footer-card h2 {
+  font-family: Poppins;
+  font-size: 36px;
+  font-weight: 600;
+  line-height: 44px;
+  letter-spacing: -0.03em;
+  text-align: left;
+  color: #fff;
+}
+footer .footer .footer-card a {
+  font-family: Poppins;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 27px;
+  text-align: left;
+  color: #fff;
+}
+footer .footer .footer-card .social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 20px;
+}
+footer .footer .footer-card h4 {
+  margin-top: 100px;
+}
+footer .footer .footer-card input {
+  padding: 20px 30px;
+  border-radius: 31px;
+  border: none;
+}
+footer .footer .footer-card p {
+  margin-top: 117px;
+  font-family: Poppins;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  text-align: left;
 }/*# sourceMappingURL=main.css.map */
