@@ -23,3 +23,8 @@ li {
   list-style: none;
 }
 // ! header
+@media (max-width: 768px) {
+  .container {
+    padding: 30px 10px;
+  }
+}

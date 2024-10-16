@@ -2,8 +2,11 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  position: relative; /* Pozitsiyani nisbiy qilib qo'yish menyuni joylashishiga yordam beradi */
 
-  //? list style
+  .burger-btn {
+    display: none; /* Burger tugmasi default holatda yashiringan */
+  }
 
   .list {
     display: flex;
@@ -26,11 +29,13 @@
           color: #f58a07;
         }
       }
+
       &:last-child {
         background-color: #f58a071a;
         padding: 10px;
         border-radius: 15px;
         transition: all 0.6s ease;
+
         a {
           font-family: Poppins;
           font-size: 16px;
@@ -39,10 +44,38 @@
           text-align: left;
           color: #f58a07;
         }
+
         &:hover {
           background-color: #f0c99d;
         }
       }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    padding: 20px 30px;
+
+    .list {
+      padding: 20px;
+      position: absolute;
+      flex-direction: column;
+      right: 0;
+      top: 90px;
+      background-color: #a2b1c0;
+      width: 100%;
+      display: none; /* Dastlab menyu yopiq bo'ladi */
+      z-index: 1000; /* Boshqa elementlar ustiga chiqishi uchun */
+    }
+
+    .burger-btn {
+      display: block; /* Mobil ekranlar uchun burger tugmasini ko'rsatish */
+    }
+
+    /* Burger menyu ochilganda */
+    .burger-show .list {
+      display: flex; /* Ochilganda menyuni ko'rsatish */
     }
   }
 }
