@@ -376,11 +376,6 @@ button:hover {
             justify-content: center;
     padding: 10px;
   }
-  .compaines-cards .compaines-card {
-    border: 1px solid #063255;
-    padding: 10px;
-    border-radius: 10px;
-  }
   .compaines-cards .compaines-card h3 {
     font-family: Poppins;
     font-size: 24px;
