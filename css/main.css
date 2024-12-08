@@ -8,6 +8,10 @@
           box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: "Poppins", sans-serif;
 }
@@ -22,8 +26,9 @@ a {
   text-decoration: none;
 }
 
-li {
-  list-style: none;
+.dark * {
+  color: #fff !important;
+  background-color: #000 !important;
 }
 
 @media (max-width: 768px) {
@@ -31,6 +36,10 @@ li {
     padding: 30px 10px;
   }
 }
+main {
+  margin-top: 127px;
+}
+
 @font-face {
   font-family: "CustomFont";
   src: url("../../assets/fonts/Poppins-Bold.ttf") format("ttf"), url("../fonts/fontname-regular.woff") format("woff");
@@ -68,6 +77,14 @@ button:hover {
       -ms-flex-pack: justify;
           justify-content: space-between;
   position: relative; /* Pozitsiyani nisbiy qilib qo'yish menyuni joylashishiga yordam beradi */
+  position: fixed;
+  width: 100%;
+  z-index: 1000;
+  background-color: #fff;
+  padding: 40px 160px;
+  -webkit-transition: 1s;
+  transition: 1s;
+  top: 0;
 }
 .navbar .burger-btn {
   display: none; /* Burger tugmasi default holatda yashiringan */
@@ -114,6 +131,10 @@ button:hover {
 }
 .navbar .list-item:last-child:hover {
   background-color: #f0c99d;
+}
+
+.navbar-shrink {
+  padding: 30px 160px;
 }
 
 @media (max-width: 768px) {
@@ -2150,6 +2171,576 @@ footer .footer .footer-card p {
     width: 100%;
   }
   .about-dream .about-dream-image img {
+    width: 100%;
+  }
+}
+.careers-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 20px;
+}
+.careers-wrapper .wrapper-info {
+  width: 50%;
+}
+.careers-wrapper .wrapper-info h2 {
+  font-family: Poppins;
+  font-size: 56px;
+  font-weight: 600;
+  line-height: 72px;
+  letter-spacing: -0.03em;
+  text-align: left;
+  text-underline-position: from-font;
+  -webkit-text-decoration-skip-ink: none;
+          text-decoration-skip-ink: none;
+}
+.careers-wrapper .wrapper-info p {
+  font-family: Poppins;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 30px;
+  text-align: left;
+  text-underline-position: from-font;
+  -webkit-text-decoration-skip-ink: none;
+          text-decoration-skip-ink: none;
+  margin: 20px 0;
+}
+.careers-wrapper .wrapper-image {
+  width: 50%;
+}
+.careers-wrapper .wrapper-image img {
+  width: 100%;
+}
+
+.business {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 30px;
+}
+.business .wrapper-info {
+  width: 50%;
+}
+.business .wrapper-info ul {
+  padding-left: 20px;
+}
+.business .wrapper-info h2 {
+  font-family: Poppins;
+  font-size: 56px;
+  font-weight: 600;
+  line-height: 72px;
+  letter-spacing: -0.03em;
+  text-align: left;
+  text-underline-position: from-font;
+  -webkit-text-decoration-skip-ink: none;
+          text-decoration-skip-ink: none;
+}
+.business .wrapper-info p {
+  font-family: Poppins;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 30px;
+  text-align: left;
+  text-underline-position: from-font;
+  -webkit-text-decoration-skip-ink: none;
+          text-decoration-skip-ink: none;
+  margin: 20px 0;
+}
+.business .wrapper-image {
+  width: 50%;
+}
+.business .wrapper-image img {
+  width: 100%;
+}
+
+.digitalization {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 30px;
+}
+.digitalization .wrapper-info {
+  width: 50%;
+}
+.digitalization .wrapper-info h2 {
+  font-family: Poppins;
+  font-size: 40px;
+  font-weight: 600;
+  line-height: 72px;
+  letter-spacing: -0.03em;
+  text-align: left;
+  text-underline-position: from-font;
+  -webkit-text-decoration-skip-ink: none;
+          text-decoration-skip-ink: none;
+}
+.digitalization .wrapper-info p {
+  font-family: Poppins;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 30px;
+  text-align: left;
+  text-underline-position: from-font;
+  -webkit-text-decoration-skip-ink: none;
+          text-decoration-skip-ink: none;
+  margin: 20px 0;
+}
+.digitalization .wrapper-image {
+  width: 50%;
+}
+.digitalization .wrapper-image img {
+  width: 100%;
+}
+
+.assessment {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 30px;
+}
+.assessment .wrapper-info {
+  width: 50%;
+}
+.assessment .wrapper-info ul {
+  padding-left: 20px;
+}
+.assessment .wrapper-info h2 {
+  font-family: Poppins;
+  font-size: 40px;
+  font-weight: 600;
+  line-height: 72px;
+  letter-spacing: -0.03em;
+  text-align: left;
+  text-underline-position: from-font;
+  -webkit-text-decoration-skip-ink: none;
+          text-decoration-skip-ink: none;
+}
+.assessment .wrapper-info p {
+  font-family: Poppins;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 30px;
+  text-align: left;
+  text-underline-position: from-font;
+  -webkit-text-decoration-skip-ink: none;
+          text-decoration-skip-ink: none;
+  margin: 20px 0;
+}
+.assessment .wrapper-image {
+  width: 50%;
+}
+.assessment .wrapper-image img {
+  width: 100%;
+}
+
+.intelligence {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 30px;
+}
+.intelligence .wrapper-info {
+  width: 50%;
+}
+.intelligence .wrapper-info h2 {
+  font-family: Poppins;
+  font-size: 40px;
+  font-weight: 600;
+  line-height: 72px;
+  letter-spacing: -0.03em;
+  text-align: left;
+  text-underline-position: from-font;
+  -webkit-text-decoration-skip-ink: none;
+          text-decoration-skip-ink: none;
+}
+.intelligence .wrapper-info p {
+  font-family: Poppins;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 30px;
+  text-align: left;
+  text-underline-position: from-font;
+  -webkit-text-decoration-skip-ink: none;
+          text-decoration-skip-ink: none;
+  margin: 20px 0;
+}
+.intelligence .wrapper-image {
+  width: 50%;
+}
+.intelligence .wrapper-image img {
+  width: 100%;
+}
+
+.contracts {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 30px;
+}
+.contracts .wrapper-info {
+  width: 50%;
+}
+.contracts .wrapper-info ul {
+  padding-left: 20px;
+}
+.contracts .wrapper-info h2 {
+  font-family: Poppins;
+  font-size: 40px;
+  font-weight: 600;
+  line-height: 72px;
+  letter-spacing: -0.03em;
+  text-align: left;
+  text-underline-position: from-font;
+  -webkit-text-decoration-skip-ink: none;
+          text-decoration-skip-ink: none;
+}
+.contracts .wrapper-info p {
+  font-family: Poppins;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 30px;
+  text-align: left;
+  text-underline-position: from-font;
+  -webkit-text-decoration-skip-ink: none;
+          text-decoration-skip-ink: none;
+  margin: 20px 0;
+}
+.contracts .wrapper-image {
+  width: 50%;
+}
+.contracts .wrapper-image img {
+  width: 100%;
+}
+
+@media screen and (max-width: 768px) {
+  .careers-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 20px;
+  }
+  .careers-wrapper .wrapper-info {
+    width: 100%;
+  }
+  .careers-wrapper .wrapper-info h2 {
+    font-family: Poppins;
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 52px;
+    letter-spacing: -0.03em;
+    text-align: center;
+    text-underline-position: from-font;
+    -webkit-text-decoration-skip-ink: none;
+            text-decoration-skip-ink: none;
+  }
+  .careers-wrapper .wrapper-info p {
+    font-family: Poppins;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 30px;
+    text-align: center;
+    text-underline-position: from-font;
+    -webkit-text-decoration-skip-ink: none;
+            text-decoration-skip-ink: none;
+    margin: 20px 0;
+  }
+  .careers-wrapper .wrapper-info button {
+    width: 100%;
+    text-align: center;
+  }
+  .careers-wrapper .wrapper-image {
+    width: 100%;
+  }
+  .careers-wrapper .wrapper-image img {
+    width: 100%;
+  }
+  .business {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 30px;
+  }
+  .business .wrapper-info {
+    width: 100%;
+  }
+  .business .wrapper-info ul {
+    padding-left: 20px;
+  }
+  .business .wrapper-info h2 {
+    font-family: Poppins;
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 52px;
+    letter-spacing: -0.03em;
+    text-align: center;
+    text-underline-position: from-font;
+    -webkit-text-decoration-skip-ink: none;
+            text-decoration-skip-ink: none;
+  }
+  .business .wrapper-info p {
+    font-family: Poppins;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 30px;
+    text-align: center;
+    text-underline-position: from-font;
+    -webkit-text-decoration-skip-ink: none;
+            text-decoration-skip-ink: none;
+    margin: 20px 0;
+  }
+  .business .wrapper-image {
+    width: 100%;
+  }
+  .business .wrapper-image img {
+    width: 100%;
+  }
+  .digitalization {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 30px;
+  }
+  .digitalization .wrapper-info {
+    width: 100%;
+  }
+  .digitalization .wrapper-info h2 {
+    font-family: Poppins;
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 52px;
+    letter-spacing: -0.03em;
+    text-align: center;
+    text-underline-position: from-font;
+    -webkit-text-decoration-skip-ink: none;
+            text-decoration-skip-ink: none;
+  }
+  .digitalization .wrapper-info p {
+    font-family: Poppins;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 30px;
+    text-align: center;
+    text-underline-position: from-font;
+    -webkit-text-decoration-skip-ink: none;
+            text-decoration-skip-ink: none;
+    margin: 20px 0;
+  }
+  .digitalization .wrapper-image {
+    width: 100%;
+  }
+  .digitalization .wrapper-image img {
+    width: 100%;
+  }
+  .assessment {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 30px;
+  }
+  .assessment .wrapper-info {
+    width: 100%;
+  }
+  .assessment .wrapper-info ul {
+    padding-left: 20px;
+  }
+  .assessment .wrapper-info h2 {
+    font-family: Poppins;
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 52px;
+    letter-spacing: -0.03em;
+    text-align: center;
+    text-underline-position: from-font;
+    -webkit-text-decoration-skip-ink: none;
+            text-decoration-skip-ink: none;
+  }
+  .assessment .wrapper-info p {
+    font-family: Poppins;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 30px;
+    text-align: center;
+    text-underline-position: from-font;
+    -webkit-text-decoration-skip-ink: none;
+            text-decoration-skip-ink: none;
+    margin: 20px 0;
+  }
+  .assessment .wrapper-image {
+    width: 100%;
+  }
+  .assessment .wrapper-image img {
+    width: 100%;
+  }
+  .intelligence {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 30px;
+  }
+  .intelligence .wrapper-info {
+    width: 100%;
+  }
+  .intelligence .wrapper-info h2 {
+    font-family: Poppins;
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 52px;
+    letter-spacing: -0.03em;
+    text-align: center;
+    text-underline-position: from-font;
+    -webkit-text-decoration-skip-ink: none;
+            text-decoration-skip-ink: none;
+  }
+  .intelligence .wrapper-info p {
+    font-family: Poppins;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 30px;
+    text-align: center;
+    text-underline-position: from-font;
+    -webkit-text-decoration-skip-ink: none;
+            text-decoration-skip-ink: none;
+    margin: 20px 0;
+  }
+  .intelligence .wrapper-image {
+    width: 100%;
+  }
+  .intelligence .wrapper-image img {
+    width: 100%;
+  }
+  .contracts {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 30px;
+  }
+  .contracts .wrapper-info {
+    width: 100%;
+  }
+  .contracts .wrapper-info ul {
+    padding-left: 20px;
+  }
+  .contracts .wrapper-info h2 {
+    font-family: Poppins;
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 52px;
+    letter-spacing: -0.03em;
+    text-align: center;
+    text-underline-position: from-font;
+    -webkit-text-decoration-skip-ink: none;
+            text-decoration-skip-ink: none;
+  }
+  .contracts .wrapper-info p {
+    font-family: Poppins;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 30px;
+    text-align: center;
+    text-underline-position: from-font;
+    -webkit-text-decoration-skip-ink: none;
+            text-decoration-skip-ink: none;
+    margin: 20px 0;
+  }
+  .contracts .wrapper-image {
+    width: 100%;
+  }
+  .contracts .wrapper-image img {
     width: 100%;
   }
 }/*# sourceMappingURL=main.css.map */

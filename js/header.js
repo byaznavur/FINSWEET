@@ -1,6 +1,7 @@
 const burgerBtn = document.querySelector(".burger-btn");
 const listItem = document.querySelector(".list");
 const imgBtn = document.querySelector(".imgBtn");
+const navbar = document.querySelector(".navbar");
 
 // Eski va yangi rasmlar
 const imgOpen =
@@ -16,5 +17,13 @@ burgerBtn.addEventListener("click", () => {
   } else {
     listItem.style.display = "none"; // Menyuni yopish
     imgBtn.src = imgClose; // Yangi rasm
+  }
+});
+
+window.addEventListener("scroll", () => {
+  if (scrollY > 100) {
+    navbar.classList.add("navbar-shrink");
+  } else {
+    navbar.classList.remove("navbar-shrink");
   }
 });

@@ -3,6 +3,13 @@
   align-items: center;
   justify-content: space-between;
   position: relative; /* Pozitsiyani nisbiy qilib qo'yish menyuni joylashishiga yordam beradi */
+  position: fixed;
+  width: 100%;
+  z-index: 1000;
+  background-color: #fff;
+  padding: 40px 160px;
+  transition: 1s;
+  top: 0;
 
   .burger-btn {
     display: none; /* Burger tugmasi default holatda yashiringan */
@@ -51,6 +58,10 @@
       }
     }
   }
+}
+
+.navbar-shrink {
+  padding: 30px 160px;
 }
 
 @media (max-width: 768px) {

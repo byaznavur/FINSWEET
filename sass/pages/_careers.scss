@@ -1,0 +1,494 @@
+.careers-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+
+  .wrapper-info {
+    width: 50%;
+
+    h2 {
+      font-family: Poppins;
+      font-size: 56px;
+      font-weight: 600;
+      line-height: 72px;
+      letter-spacing: -0.03em;
+      text-align: left;
+      text-underline-position: from-font;
+      text-decoration-skip-ink: none;
+    }
+    p {
+      font-family: Poppins;
+      font-size: 18px;
+      font-weight: 500;
+      line-height: 30px;
+      text-align: left;
+      text-underline-position: from-font;
+      text-decoration-skip-ink: none;
+      margin: 20px 0;
+    }
+  }
+  .wrapper-image {
+    width: 50%;
+
+    img {
+      width: 100%;
+    }
+  }
+}
+.business {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+
+  .wrapper-info {
+    width: 50%;
+    ul {
+      padding-left: 20px;
+    }
+    h2 {
+      font-family: Poppins;
+      font-size: 56px;
+      font-weight: 600;
+      line-height: 72px;
+      letter-spacing: -0.03em;
+      text-align: left;
+      text-underline-position: from-font;
+      text-decoration-skip-ink: none;
+    }
+    p {
+      font-family: Poppins;
+      font-size: 18px;
+      font-weight: 500;
+      line-height: 30px;
+      text-align: left;
+      text-underline-position: from-font;
+      text-decoration-skip-ink: none;
+      margin: 20px 0;
+    }
+  }
+  .wrapper-image {
+    width: 50%;
+
+    img {
+      width: 100%;
+    }
+  }
+}
+
+.digitalization {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+
+  .wrapper-info {
+    width: 50%;
+
+    h2 {
+      font-family: Poppins;
+      font-size: 40px;
+      font-weight: 600;
+      line-height: 72px;
+      letter-spacing: -0.03em;
+      text-align: left;
+      text-underline-position: from-font;
+      text-decoration-skip-ink: none;
+    }
+    p {
+      font-family: Poppins;
+      font-size: 18px;
+      font-weight: 500;
+      line-height: 30px;
+      text-align: left;
+      text-underline-position: from-font;
+      text-decoration-skip-ink: none;
+      margin: 20px 0;
+    }
+  }
+  .wrapper-image {
+    width: 50%;
+
+    img {
+      width: 100%;
+    }
+  }
+}
+
+.assessment {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+
+  .wrapper-info {
+    width: 50%;
+    ul {
+      padding-left: 20px;
+    }
+    h2 {
+      font-family: Poppins;
+      font-size: 40px;
+      font-weight: 600;
+      line-height: 72px;
+      letter-spacing: -0.03em;
+      text-align: left;
+      text-underline-position: from-font;
+      text-decoration-skip-ink: none;
+    }
+    p {
+      font-family: Poppins;
+      font-size: 18px;
+      font-weight: 500;
+      line-height: 30px;
+      text-align: left;
+      text-underline-position: from-font;
+      text-decoration-skip-ink: none;
+      margin: 20px 0;
+    }
+  }
+  .wrapper-image {
+    width: 50%;
+
+    img {
+      width: 100%;
+    }
+  }
+}
+
+.intelligence {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+
+  .wrapper-info {
+    width: 50%;
+
+    h2 {
+      font-family: Poppins;
+      font-size: 40px;
+      font-weight: 600;
+      line-height: 72px;
+      letter-spacing: -0.03em;
+      text-align: left;
+      text-underline-position: from-font;
+      text-decoration-skip-ink: none;
+    }
+    p {
+      font-family: Poppins;
+      font-size: 18px;
+      font-weight: 500;
+      line-height: 30px;
+      text-align: left;
+      text-underline-position: from-font;
+      text-decoration-skip-ink: none;
+      margin: 20px 0;
+    }
+  }
+  .wrapper-image {
+    width: 50%;
+
+    img {
+      width: 100%;
+    }
+  }
+}
+
+.contracts {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+
+  .wrapper-info {
+    width: 50%;
+    ul {
+      padding-left: 20px;
+    }
+    h2 {
+      font-family: Poppins;
+      font-size: 40px;
+      font-weight: 600;
+      line-height: 72px;
+      letter-spacing: -0.03em;
+      text-align: left;
+      text-underline-position: from-font;
+      text-decoration-skip-ink: none;
+    }
+    p {
+      font-family: Poppins;
+      font-size: 18px;
+      font-weight: 500;
+      line-height: 30px;
+      text-align: left;
+      text-underline-position: from-font;
+      text-decoration-skip-ink: none;
+      margin: 20px 0;
+    }
+  }
+  .wrapper-image {
+    width: 50%;
+
+    img {
+      width: 100%;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .careers-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    gap: 20px;
+
+    .wrapper-info {
+      width: 100%;
+
+      h2 {
+        font-family: Poppins;
+        font-size: 40px;
+        font-weight: 600;
+        line-height: 52px;
+        letter-spacing: -0.03em;
+        text-align: center;
+        text-underline-position: from-font;
+        text-decoration-skip-ink: none;
+      }
+      p {
+        font-family: Poppins;
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 30px;
+        text-align: center;
+        text-underline-position: from-font;
+        text-decoration-skip-ink: none;
+        margin: 20px 0;
+      }
+      button {
+        width: 100%;
+        text-align: center;
+      }
+    }
+    .wrapper-image {
+      width: 100%;
+
+      img {
+        width: 100%;
+      }
+    }
+  }
+  .business {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+
+    gap: 30px;
+
+    .wrapper-info {
+      width: 100%;
+      ul {
+        padding-left: 20px;
+      }
+      h2 {
+        font-family: Poppins;
+        font-size: 40px;
+        font-weight: 600;
+        line-height: 52px;
+        letter-spacing: -0.03em;
+        text-align: center;
+        text-underline-position: from-font;
+        text-decoration-skip-ink: none;
+      }
+      p {
+        font-family: Poppins;
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 30px;
+        text-align: center;
+        text-underline-position: from-font;
+        text-decoration-skip-ink: none;
+        margin: 20px 0;
+      }
+    }
+    .wrapper-image {
+      width: 100%;
+
+      img {
+        width: 100%;
+      }
+    }
+  }
+
+  .digitalization {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+
+    gap: 30px;
+
+    .wrapper-info {
+      width: 100%;
+
+      h2 {
+        font-family: Poppins;
+        font-size: 40px;
+        font-weight: 600;
+        line-height: 52px;
+        letter-spacing: -0.03em;
+        text-align: center;
+        text-underline-position: from-font;
+        text-decoration-skip-ink: none;
+      }
+      p {
+        font-family: Poppins;
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 30px;
+        text-align: center;
+        text-underline-position: from-font;
+        text-decoration-skip-ink: none;
+        margin: 20px 0;
+      }
+    }
+    .wrapper-image {
+      width: 100%;
+
+      img {
+        width: 100%;
+      }
+    }
+  }
+
+  .assessment {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+
+    gap: 30px;
+
+    .wrapper-info {
+      width: 100%;
+      ul {
+        padding-left: 20px;
+      }
+      h2 {
+        font-family: Poppins;
+        font-size: 40px;
+        font-weight: 600;
+        line-height: 52px;
+        letter-spacing: -0.03em;
+        text-align: center;
+        text-underline-position: from-font;
+        text-decoration-skip-ink: none;
+      }
+      p {
+        font-family: Poppins;
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 30px;
+        text-align: center;
+        text-underline-position: from-font;
+        text-decoration-skip-ink: none;
+        margin: 20px 0;
+      }
+    }
+    .wrapper-image {
+      width: 100%;
+
+      img {
+        width: 100%;
+      }
+    }
+  }
+
+  .intelligence {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+
+    gap: 30px;
+
+    .wrapper-info {
+      width: 100%;
+
+      h2 {
+        font-family: Poppins;
+        font-size: 40px;
+        font-weight: 600;
+        line-height: 52px;
+        letter-spacing: -0.03em;
+        text-align: center;
+        text-underline-position: from-font;
+        text-decoration-skip-ink: none;
+      }
+      p {
+        font-family: Poppins;
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 30px;
+        text-align: center;
+        text-underline-position: from-font;
+        text-decoration-skip-ink: none;
+        margin: 20px 0;
+      }
+    }
+    .wrapper-image {
+      width: 100%;
+
+      img {
+        width: 100%;
+      }
+    }
+  }
+
+  .contracts {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+
+    gap: 30px;
+
+    .wrapper-info {
+      width: 100%;
+      ul {
+        padding-left: 20px;
+      }
+      h2 {
+        font-family: Poppins;
+        font-size: 40px;
+        font-weight: 600;
+        line-height: 52px;
+        letter-spacing: -0.03em;
+        text-align: center;
+        text-underline-position: from-font;
+        text-decoration-skip-ink: none;
+      }
+      p {
+        font-family: Poppins;
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 30px;
+        text-align: center;
+        text-underline-position: from-font;
+        text-decoration-skip-ink: none;
+        margin: 20px 0;
+      }
+    }
+    .wrapper-image {
+      width: 100%;
+
+      img {
+        width: 100%;
+      }
+    }
+  }
+}
