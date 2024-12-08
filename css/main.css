@@ -2743,4 +2743,212 @@ footer .footer .footer-card p {
   .contracts .wrapper-image img {
     width: 100%;
   }
+}
+.services {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.services .wrapper-info {
+  width: 50%;
+}
+.services .wrapper-info h2 {
+  color: rgb(29, 52, 68);
+  font-family: Poppins;
+  font-size: 54px;
+  font-weight: 600;
+  line-height: 72px;
+  letter-spacing: -3%;
+  text-align: left;
+}
+.services .wrapper-info p {
+  color: rgb(91, 91, 91);
+  font-family: Poppins;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 30px;
+  letter-spacing: 0%;
+  text-align: left;
+  margin: 20px 0;
+}
+.services .wrapper-image {
+  width: 50%;
+}
+.services .wrapper-image img {
+  width: 100%;
+}
+
+.positions h3 {
+  color: rgb(13, 19, 23);
+  font-family: Poppins;
+  font-size: 48px;
+  font-weight: 600;
+  line-height: 56px;
+  letter-spacing: -3%;
+  text-align: left;
+}
+.positions .positions-cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 30px;
+  margin: 40px 0;
+}
+.positions .positions-cards .card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  border-radius: 20px;
+  background: rgba(193, 228, 255, 0.3);
+  padding: 32px 40px;
+}
+.positions .positions-cards .card h4 {
+  color: rgb(13, 19, 23);
+  font-family: Poppins;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 30px;
+  letter-spacing: -3%;
+  text-align: left;
+}
+.positions .positions-cards .card p {
+  color: rgb(57, 65, 73);
+  font-family: Poppins;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 28px;
+  letter-spacing: 0px;
+  text-align: left;
+  margin: 10px 0;
+}
+.positions .positions-cards .card a {
+  color: rgb(245, 138, 7);
+  font-family: Poppins;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 106.5%;
+  letter-spacing: 0px;
+  text-align: left;
+}
+
+@media screen and (max-width: 768px) {
+  .services {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 20px;
+  }
+  .services .wrapper-info {
+    width: 100%;
+  }
+  .services .wrapper-info h2 {
+    color: rgb(29, 52, 68);
+    font-family: Poppins;
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 52px;
+    letter-spacing: -3%;
+    text-align: center;
+  }
+  .services .wrapper-info p {
+    color: rgb(91, 91, 91);
+    font-family: Poppins;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 30px;
+    letter-spacing: 0%;
+    text-align: center;
+    margin: 20px 0;
+  }
+  .services .wrapper-info button {
+    width: 100%;
+    text-align: center;
+  }
+  .services .wrapper-image {
+    width: 100%;
+  }
+  .services .wrapper-image img {
+    width: 100%;
+  }
+  .positions h3 {
+    color: rgb(13, 19, 23);
+    font-family: Poppins;
+    font-size: 48px;
+    font-weight: 600;
+    line-height: 56px;
+    letter-spacing: -3%;
+    text-align: center;
+  }
+  .positions .positions-cards {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    gap: 30px;
+    margin: 40px 0;
+  }
+  .positions .positions-cards .card {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    border-radius: 20px;
+    background: rgba(193, 228, 255, 0.3);
+    padding: 32px 40px;
+    width: 100%;
+  }
+  .positions .positions-cards .card h4 {
+    color: rgb(13, 19, 23);
+    font-family: Poppins;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 30px;
+    letter-spacing: -3%;
+    text-align: left;
+  }
+  .positions .positions-cards .card p {
+    color: rgb(57, 65, 73);
+    font-family: Poppins;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 28px;
+    letter-spacing: 0px;
+    text-align: left;
+    margin: 10px 0;
+  }
+  .positions .positions-cards .card a {
+    color: rgb(245, 138, 7);
+    font-family: Poppins;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 106.5%;
+    letter-spacing: 0px;
+    text-align: left;
+  }
 }/*# sourceMappingURL=main.css.map */
