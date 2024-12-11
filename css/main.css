@@ -37,7 +37,161 @@ a {
   }
 }
 main {
-  margin-top: 127px;
+  margin-top: 125px;
+}
+
+/* From Uiverse.io by Dennyhml */
+.loading {
+  -webkit-transition: 0.6s;
+  transition: 0.6s;
+  position: fixed;
+  inset: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: fixed;
+  inset: 0;
+  background-color: rgb(42, 37, 75);
+  color: white;
+  opacity: 1;
+  -webkit-transition: all 0.8s ease-in-out;
+  transition: all 0.8s ease-in-out;
+}
+.loading .bubble {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  -webkit-box-shadow: inset 0 0 25px rgba 255, 255, 255, 0.25;
+          box-shadow: inset 0 0 25px rgba 255, 255, 255, 0.25;
+  -webkit-animation: animate_4010 8s ease-in-out infinite;
+          animation: animate_4010 8s ease-in-out infinite;
+}
+.loading .bubble:nth-child(2) {
+  position: relative;
+  zoom: 0.45;
+  left: -10px;
+  top: -100px;
+  -webkit-animation-delay: -4s;
+          animation-delay: -4s;
+}
+.loading .bubble:nth-child(3) {
+  position: relative;
+  zoom: 0.45;
+  right: -80px;
+  top: -300px;
+  -webkit-animation-delay: -6s;
+          animation-delay: -6s;
+}
+.loading .bubble:nth-child(4) {
+  position: relative;
+  zoom: 0.35;
+  left: -120px;
+  bottom: -200px;
+  -webkit-animation-delay: -3s;
+          animation-delay: -3s;
+}
+.loading .bubble:nth-child(5) {
+  position: relative;
+  zoom: 0.5;
+  left: 0px;
+  top: 200px;
+  -webkit-animation-delay: -5s;
+          animation-delay: -5s;
+}
+@-webkit-keyframes animate_4010 {
+  0%, 100% {
+    -webkit-transform: translateY(-20px);
+            transform: translateY(-20px);
+  }
+  50% {
+    -webkit-transform: translateY(20px);
+            transform: translateY(20px);
+  }
+}
+@keyframes animate_4010 {
+  0%, 100% {
+    -webkit-transform: translateY(-20px);
+            transform: translateY(-20px);
+  }
+  50% {
+    -webkit-transform: translateY(20px);
+            transform: translateY(20px);
+  }
+}
+.loading .bubble::before {
+  content: "";
+  position: absolute;
+  top: 50px;
+  left: 45px;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: #fff;
+  z-index: 10;
+  -webkit-filter: blur(2px);
+          filter: blur(2px);
+}
+.loading .bubble::after {
+  content: "";
+  position: absolute;
+  top: 80px;
+  left: 80px;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: #fff;
+  z-index: 10;
+  -webkit-filter: blur(2px);
+          filter: blur(2px);
+}
+.loading .bubble span {
+  position: absolute;
+  border-radius: 50%;
+}
+.loading .bubble span:nth-child(1) {
+  inset: 10px;
+  border-left: 15px solid #0fb4ff;
+  -webkit-filter: blur(8px);
+          filter: blur(8px);
+}
+.loading .bubble span:nth-child(2) {
+  inset: 10px;
+  border-right: 15px solid #ff4484;
+  -webkit-filter: blur(8px);
+          filter: blur(8px);
+}
+.loading .bubble span:nth-child(3) {
+  inset: 10px;
+  border-top: 15px solid #ffeb3b;
+  -webkit-filter: blur(8px);
+          filter: blur(8px);
+}
+.loading .bubble span:nth-child(4) {
+  inset: 30px;
+  border-left: 15px solid #ff4484;
+  -webkit-filter: blur(12px);
+          filter: blur(12px);
+}
+.loading .bubble span:nth-child(5) {
+  inset: 10px;
+  border-bottom: 10px solid #fff;
+  -webkit-filter: blur(8px);
+          filter: blur(8px);
+  -webkit-transform: rotate(330deg);
+          transform: rotate(330deg);
+}
+
+.loading-hidden {
+  opacity: 0;
+  z-index: -1;
+  display: none;
 }
 
 @font-face {
@@ -85,6 +239,8 @@ button:hover {
   -webkit-transition: 1s;
   transition: 1s;
   top: 0;
+  right: 0;
+  left: 0;
 }
 .navbar .burger-btn {
   display: none; /* Burger tugmasi default holatda yashiringan */
@@ -3242,4 +3398,382 @@ footer .footer .footer-card p {
   .contact .contact-iframe .info .iframe-info {
     width: 100%;
   }
+}
+.careers-page {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.careers-page h2 {
+  color: rgb(29, 52, 68);
+  font-family: Poppins;
+  font-size: 64px;
+  font-weight: 600;
+  line-height: 72px;
+  letter-spacing: -3%;
+  text-align: left;
+}
+.careers-page .careers-wrapper-page {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+  margin-top: 65px;
+}
+.careers-page .careers-wrapper-page .careers-wrapper-cards {
+  width: 50%;
+}
+.careers-page .careers-wrapper-page .careers-wrapper-cards h3 {
+  color: rgb(13, 19, 23);
+  font-family: Poppins;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 30px;
+  letter-spacing: -3%;
+  text-align: left;
+}
+.careers-page .careers-wrapper-page .careers-wrapper-cards p {
+  color: rgb(91, 91, 91);
+  font-family: Poppins;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 30px;
+  letter-spacing: 0%;
+  text-align: left;
+  margin-top: 16px;
+}
+.careers-page .careers-wrapper-page .careers-wrapper-cards:last-child {
+  width: 25%;
+}
+
+.details {
+  background-color: rgba(193, 228, 255, 0.3019607843);
+  padding: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 20px;
+  border-radius: 20px;
+  background: rgba(193, 228, 255, 0.3);
+}
+.details li {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.details li h3 {
+  width: 30%;
+  color: rgb(245, 138, 7);
+  font-family: Inter;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 108.5%;
+  letter-spacing: 0px;
+  text-align: left;
+}
+.details li p {
+  width: 70%;
+  color: rgb(91, 91, 91);
+  font-family: Poppins;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 28px;
+  letter-spacing: 0%;
+  text-align: left;
+}
+
+.apply h3 {
+  color: rgb(13, 19, 23);
+  font-family: Poppins;
+  font-size: 48px;
+  font-weight: 600;
+  line-height: 56px;
+  letter-spacing: -3%;
+  text-align: left;
+}
+.apply .apply-form {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+  margin-top: 50px;
+}
+.apply .apply-form input {
+  border-radius: 27px;
+  padding: 17px 32px;
+  background: rgba(210, 218, 237, 0.17);
+  color: rgb(156, 156, 156);
+  font-family: Inter;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 19px;
+  letter-spacing: 0%;
+  text-align: left;
+}
+.apply .apply-form textarea {
+  border-radius: 27px;
+  background: rgba(210, 218, 237, 0.17);
+  padding: 17px 32px;
+  color: rgb(156, 156, 156);
+  font-family: Inter;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 19px;
+  letter-spacing: 0%;
+  text-align: left;
+  width: 100%;
+  height: 215px;
+}
+
+@media screen and (max-width: 768px) {
+  .careers-page {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .careers-page h2 {
+    color: rgb(29, 52, 68);
+    font-family: Poppins;
+    font-size: 34px;
+    font-weight: 600;
+    line-height: 52px;
+    letter-spacing: -3%;
+    text-align: left;
+  }
+  .careers-page .careers-wrapper-page {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    width: 100%;
+    margin-top: 35px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .careers-page .careers-wrapper-page .careers-wrapper-cards {
+    width: 100%;
+  }
+  .careers-page .careers-wrapper-page .careers-wrapper-cards h3 {
+    color: rgb(13, 19, 23);
+    font-family: Poppins;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 30px;
+    letter-spacing: -3%;
+    text-align: left;
+  }
+  .careers-page .careers-wrapper-page .careers-wrapper-cards p {
+    color: rgb(91, 91, 91);
+    font-family: Poppins;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 30px;
+    letter-spacing: 0%;
+    text-align: left;
+    margin-top: 8px;
+  }
+  .careers-page .careers-wrapper-page .careers-wrapper-cards:last-child {
+    width: 100%;
+    margin-top: 20px;
+  }
+  .details {
+    background-color: rgba(193, 228, 255, 0.3019607843);
+    padding: 40px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 20px;
+    border-radius: 20px;
+    background: rgba(193, 228, 255, 0.3);
+  }
+  .details li {
+    list-style: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .details li h3 {
+    width: 100%;
+    color: rgb(245, 138, 7);
+    font-family: Inter;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 108.5%;
+    letter-spacing: 0px;
+    text-align: left;
+  }
+  .details li p {
+    width: 100%;
+    color: rgb(91, 91, 91);
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 28px;
+    letter-spacing: 0%;
+    text-align: left;
+  }
+  .apply h3 {
+    color: rgb(13, 19, 23);
+    font-family: Poppins;
+    font-size: 28px;
+    font-weight: 600;
+    line-height: 26px;
+    letter-spacing: -3%;
+    text-align: left;
+  }
+  .apply .apply-form {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 24px;
+    margin-top: 50px;
+  }
+  .apply .apply-form input {
+    border-radius: 27px;
+    padding: 17px 32px;
+    background: rgba(210, 218, 237, 0.17);
+    color: rgb(156, 156, 156);
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 19px;
+    letter-spacing: 0%;
+    text-align: left;
+  }
+  .apply .apply-form textarea {
+    border-radius: 27px;
+    background: rgba(210, 218, 237, 0.17);
+    padding: 17px 32px;
+    color: rgb(156, 156, 156);
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 19px;
+    letter-spacing: 0%;
+    text-align: left;
+    width: 100%;
+    height: 215px;
+  }
+}
+.inner-wrapper img {
+  width: 100%;
+}
+.inner-wrapper .inner-info {
+  width: 60%;
+  margin: 0 auto;
+}
+.inner-wrapper .inner-info h3 {
+  color: rgb(29, 52, 68);
+  font-family: Poppins;
+  font-size: 64px;
+  font-weight: 600;
+  line-height: 72px;
+  letter-spacing: -3%;
+  text-align: left;
+  margin-top: 30px;
+}
+.inner-wrapper .inner-info p {
+  color: rgb(91, 91, 91);
+  font-family: Poppins;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 28px;
+  letter-spacing: 0%;
+  text-align: left;
+  margin-top: 30px;
+}
+
+@media screen and (max-width: 768px) {
+  .inner-wrapper img {
+    width: 100%;
+  }
+  .inner-wrapper .inner-info {
+    width: 100%;
+    margin: 0 auto;
+  }
+  .inner-wrapper .inner-info h3 {
+    color: rgb(29, 52, 68);
+    font-family: Poppins;
+    font-size: 34px;
+    font-weight: 400;
+    line-height: 42px;
+    letter-spacing: -3%;
+    text-align: left;
+    margin-top: 30px;
+  }
+  .inner-wrapper .inner-info p {
+    color: rgb(91, 91, 91);
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 28px;
+    letter-spacing: 0%;
+    text-align: left;
+    margin-top: 30px;
+  }
+}
+.privacy h2 {
+  color: rgb(29, 52, 68);
+  font-family: Poppins;
+  font-size: 64px;
+  font-weight: 600;
+  line-height: 72px;
+  letter-spacing: -3%;
+  text-align: left;
+}
+.privacy span {
+  color: rgb(91, 91, 91);
+  font-family: Poppins;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 28px;
+  letter-spacing: 0%;
+  text-align: left;
+  margin: 30px 0;
+}
+.privacy p {
+  color: rgb(91, 91, 91);
+  font-family: Poppins;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 28px;
+  letter-spacing: 0%;
+  text-align: left;
+  margin: 10px 0;
+}
+.privacy h3 {
+  color: rgb(13, 19, 23);
+  font-family: Poppins;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 30px;
+  letter-spacing: -3%;
+  text-align: left;
+  margin: 10px 0;
 }/*# sourceMappingURL=main.css.map */
